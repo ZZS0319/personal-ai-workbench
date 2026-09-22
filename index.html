@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-    <link rel="stylesheet" href="style.css">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" 
-    content="width=device-width, initial
-    -scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>个人AI工作台</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <main>
         <h1>个人AI工作台</h1>
@@ -33,6 +32,47 @@
         </a>
             </article>
         </section>
+
+        <section class="roadmap">
+            <h2>第一单元学习路线</h2>
+            <ul>
+              <li><strong>了解阶段：</strong>已完成</li>
+              <li><strong>边做边学阶段：</strong>进行中</li>
+              <li><strong>独立完成阶段：</strong>尚未开始</li>
+            </ul>
+            <button class="button" id="complete-button">
+                记录今日学习
+              </button>
+
+              <p id="status-message"></p>
+
+              <div class="goal-box">
+                <label for="next-goal">下一步学习目标</label>
+                <input
+                  id="next-goal"
+                  type="text"
+                  placeholder="例如：完成个人AI工作台第一版"
+                >
+                <button class="button" id="save-goal-button">保存目标</button>
+                <p id="saved-goal"></p>
+              </div>
+          </section>
+
+          <section class="tools">
+            <h2>工具导航</h2>
+            <div class="tool-links">
+              <a href="https://chatgpt.com/" target="_blank" rel="noopener noreferrer">ChatGPT</a>
+              <a href="https://github.com/" target="_blank" rel="noopener noreferrer">GitHub</a>
+              <a href="https://cursor.com/" target="_blank" rel="noopener noreferrer">Cursor</a>
+              <a href="https://docs.python.org/zh-cn/3/" target="_blank" rel="noopener noreferrer">Python 文档</a>
+            </div>
+          </section>
     </main>
+
+    <footer>
+      <p>持续学习，持续构建我的个人 AI 工作流。</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>

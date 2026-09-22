@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    front-family: "Microsoft YaHei", sans-serif;
+    font-family: "Microsoft YaHei", sans-serif;
     background-color: #f4f7fb;
     color: #1f2937;
 }
@@ -50,8 +50,90 @@ main {
     text-decoration: none;
     border-radius: 8px;
     transition: background-color 0.2s;
+    border: none;
+    cursor: pointer;
+    font: inherit;
   }
   
   .button:hover {
     background-color: #1d4ed8;
   }
+
+  .roadmap {
+    margin-top: 32px;
+    padding: 24px;
+    background-color: #f8fafc;
+    border-left: 5px solid #2563eb;
+    border-radius: 10px;
+  }
+
+  .roadmap h2 {
+    margin-top: 0;
+  }
+
+  .roadmap li {
+    margin: 10px 0;
+    line-height: 1.6;
+  }
+
+.goal-box {
+    margin-top: 24px;
+}
+
+.goal-box label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.goal-box input {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    font: inherit;
+}
+
+#saved-goal {
+    margin-bottom: 0;
+    color: #2563eb;
+    font-weight: bold;
+}
+
+.tools {
+    margin-top: 32px;
+}
+
+.tool-links {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.tool-links a {
+    padding: 14px;
+    color: #1e3a8a;
+    background-color: #dbeafe;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 10px;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.tool-links a:hover {
+    background-color: #bfdbfe;
+    transform: translateY(-2px);
+}
+
+footer {
+    padding: 0 20px 30px;
+    color: #64748b;
+    text-align: center;
+}
+
+@media (max-width: 700px) {
+    .tool-links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
